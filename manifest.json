@@ -8,8 +8,16 @@
     "display": "standalone",
     "icons": [
         {
+          "src": "icons/ct48.png",
+          "sizes": "48x48"          
+        },
+        {
+          "src": "icons/ct72.png",
+          "sizes": "72x72"
+        },
+        {
           "src": "icons/ct128.png",
-          "sizes": "48x48 72x72 96x96 128x128 256x256"
+          "sizes": "128x128"
         },
         {
           "src": "icons/ct512.png",
@@ -17,7 +25,3 @@
         }
       ]
 }
-
-
-
-  

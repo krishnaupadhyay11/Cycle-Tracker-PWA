@@ -1,5 +1,5 @@
 // The version of the cache.
-const VERSION = "v1";
+const VERSION = "v1.02";
 
 // The name of the cache
 const CACHE_NAME = `period-tracker-${VERSION}`;
@@ -10,7 +10,7 @@ const APP_STATIC_RESOURCES = [
   "/index.html",
   "/app.js",
   "/style.css",
-  "/icons/wheel.svg",
+  "/icons/ct512.png",
 ];
 
 // On install, cache the static resources

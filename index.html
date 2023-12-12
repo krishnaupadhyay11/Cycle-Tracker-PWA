@@ -1,11 +1,10 @@
-<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="style.css" />
     <link rel="manifest" href="manifest.json" />
-    <link rel="icon" type="image/x-icon" href="icons/ct128.png" />    
+    <link rel="icon" type="image/x-icon" href="icons/ct512.png" />    
     <title>Cycle Tracker</title>
   </head>
   <body>
@@ -33,9 +32,10 @@
           <li>From 01/29/2024 to 02/04/2024</li>
         </ul> -->
       </section>      
-    <script src="app.js" defer>
+    <script src="app.js" defer></script>
+    <script>
       if ("serviceWorker" in navigator) {
-        navigator.serviceWorker.register("sw.js", /*{scope:"/"}*/).then(
+        navigator.serviceWorker.register("sw.js").then(
           (registration) => {
             console.log("Service worker registration successful:", registration);
           },
