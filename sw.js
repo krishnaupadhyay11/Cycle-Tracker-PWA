@@ -53,11 +53,11 @@ self.addEventListener("fetch", (event) => {
   // For all other requests, go to the cache first, and then the network.
   event.respondWith(
     (async () => {
-      const r = await caches.match(event.request);
+      const r = await caches.match(event.request.url);
       console.log(`[Service Worker] Fetching resource: ${event.request.url}`);
       if (r) return r;
 
-      const response = await fetch(event.request);
+      const response = await fetch(event.request.url);
       const cache = await caches.open(CACHE_NAME);
       console.log(`[Service Worker] Caching new resource: ${event.request.url}`);
       cache.put(event.request, response.clone());
