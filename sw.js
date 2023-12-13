@@ -8,10 +8,10 @@ const CACHE_NAME = `period-tracker-${VERSION}`;
 const APP_STATIC_RESOURCES = [
   "/",
   "/Cycle-Tracker-PWA",
-  "/index.html",
-  "/app.js",
-  "/style.css",
-  "/icons/ct512.png",
+  "/Cycle-Tracker-PWA/index.html",
+  "/Cycle-Tracker-PWA/app.js",
+  "/Cycle-Tracker-PWA/style.css",
+  "/Cycle-Tracker-PWA/icons/ct512.png",
 ];
 
 // On install, cache the static resources
