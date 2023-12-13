@@ -50,7 +50,7 @@ self.addEventListener("fetch", (event) => {
   }
 
   // For all other requests, go to the cache first, and then the network.
-  event.respondWith(
+  /*event.respondWith(
     (async () => {
       const cache = await caches.open(CACHE_NAME);
       const cachedResponse = await cache.match(event.request.url);
@@ -61,5 +61,17 @@ self.addEventListener("fetch", (event) => {
       // If resource isn't in the cache, return a 404.
       return new Response(null, { status: 404 });
     })(),
+  );*/
+  e.respondWith((async () => {
+    const r = await caches.match(e.request);
+    console.log(`[Service Worker] Fetching resource: ${e.request.url}`);
+    if (r) return r;
+    const response = await fetch(e.request);
+    const cache = await caches.open(cacheName);
+    console.log(`[Service Worker] Caching new resource: ${e.request.url}`);
+    cache.put(e.request, response.clone());
+    return response;
+  })()
   );
+});
 });
