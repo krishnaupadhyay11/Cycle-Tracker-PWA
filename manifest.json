@@ -5,7 +5,7 @@
     "theme_color": "#eeffee",
     "background_color": "#eeffee",
     "display": "standalone",
-    "start_URL": "/Cycle-Tracker-PWA",
+    "start_URL": "/",
     "icons": [
         {
           "src": "icons/ct48.png",
