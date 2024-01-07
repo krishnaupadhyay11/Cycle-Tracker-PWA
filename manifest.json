@@ -1,7 +1,7 @@
 {
-    "name": "CycleTracker: Period Tracking app",
+    "name": "CycleTracker: Period Tracking App",
     "short_name": "CT PWA",
-    "description": "Securely and confidentially track your menstrual cycle. Enter the start and end dates of your periods, saving your private data to your browser on your device, without sharing it with the rest of the world.",
+    "description": "Easily and securely save your dedicated schedules with titles and description!",
     "theme_color": "#eeffee",
     "background_color": "#eeffee",
     "display": "standalone",
