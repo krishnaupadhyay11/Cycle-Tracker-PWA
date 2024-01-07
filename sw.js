@@ -45,10 +45,10 @@ self.addEventListener("activate", (event) => {
 // and respond with cached responses instead of going to network
 self.addEventListener("fetch", (event) => {
   // As a single page app, direct app to always go to cached home page.
-  if (event.request.mode === "navigate") {
+  /*if (event.request.mode === "navigate") {
     event.respondWith(caches.match("/Cycle-Tracker-PWA"));
     return;
-  }
+  }*/
 
   // For all other requests, go to the cache first, and then the network.
   event.respondWith(
